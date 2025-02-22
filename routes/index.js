@@ -79,7 +79,7 @@ router.get('/profile', ensureAuthenticated, (req, res) =>
     user: req.user
   })
 );
-router.get('/invest', ensureAuthenticated, (req, res) =>
+router.get('/buy-now', ensureAuthenticated, (req, res) =>
   res.render('invest', {
     user: req.user
   })
